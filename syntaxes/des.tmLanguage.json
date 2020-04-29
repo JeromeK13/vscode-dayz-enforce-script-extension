@@ -6,6 +6,15 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#operators"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#types"
+		},
+		{
 			"include": "#strings"
 		},
 		{
@@ -17,23 +26,59 @@
 			"patterns": [
 				{
 				"name": "keyword.control.des",
-				"match": "\\b(if|else|while|for|return)\\b"
+				"match": "\\b(private|protected|static|override|proto|native|autoptr|proto|ref|const|out|inout|modded|new|delete|class|extends|typedef|return|null|this|super)\\b"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.arithmethic.des",
+					"match": "(\\+|\\-|\\*|\\%|\\+\\+|\\-\\-)"
 				},
 				{
-					"name": "keyword.operator.add.des",
-					"match": "\\+"
+					"name": "keyword.operator.assignment.des",
+					"match": "(\\=|\\+\\=|\\-\\=|\\*\\=|\\/\\=|\\+\\+|\\-\\-)"
 				},
 				{
-					"name": "keyword.operator.subtract.des",
-					"match": "\\-"
+					"name": "keyword.operator.relation.des",
+					"match": "(\\=\\=|\\!\\=|\\>|\\<|\\>\\=|\\<\\=)"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.float.des",
+					"match": "(?:(?:[-]?)(?:[0-9e]*)(?:[.]){1}(?:[0-9]+))"
 				},
 				{
-					"name": "keyword.operator.multiply.des",
-					"match": "\\*"
+					"name": "constant.numeric.exponental.des",
+					"match": "[-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)"
 				},
 				{
-					"name": "keyword.operator.modulo.des",
-					"match": "\\%"
+					"name": "constant.numeric.binary.des",
+					"match": "\\b(?:0[b])(?:[0-1]+)"
+				},
+				{
+					"name": "constant.numeric.octal.des",
+					"match": "\\b(?:0[o])(?:[0-7]+)"
+				},
+				{
+					"name": "constant.numeric.hex.des",
+					"match": "\\b(?:0[x])(?:[0-9a-fA-F]+)"
+				},
+				{
+					"name": "constant.numeric.integer.des",
+					"match": "\\b(?:[-]?)(?:[0-9]+)"
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"name": "storage.type.v",
+					"match": "\\b(int|float|bool|string|vector|void|class|typename)\\b"
 				}
 			]
 		},
