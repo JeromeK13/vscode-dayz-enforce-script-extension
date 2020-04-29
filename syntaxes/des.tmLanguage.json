@@ -26,7 +26,7 @@
 			"patterns": [
 				{
 				"name": "keyword.control.des",
-				"match": "\\b(private|protected|static|override|proto|native|autoptr|proto|ref|const|out|inout|modded|new|delete|class|extends|typedef|return|null|this|super)\\b"
+				"match": "\\b(private|protected|static|override|proto|native|autoptr|proto|ref|const|out|inout|modded|new|delete|class|extends|typedef|return|null|this|super|if|else)\\b"
 				}
 			]
 		},
@@ -77,7 +77,7 @@
 		"types": {
 			"patterns": [
 				{
-					"name": "storage.type.v",
+					"name": "storage.type.des",
 					"match": "\\b(int|float|bool|string|vector|void|class|typename)\\b"
 				}
 			]
