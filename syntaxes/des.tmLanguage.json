@@ -14,10 +14,28 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
+			"patterns": [
+				{
 				"name": "keyword.control.des",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+				"match": "\\b(if|else|while|for|return)\\b"
+				},
+				{
+					"name": "keyword.operator.add.des",
+					"match": "\\+"
+				},
+				{
+					"name": "keyword.operator.subtract.des",
+					"match": "\\-"
+				},
+				{
+					"name": "keyword.operator.multiply.des",
+					"match": "\\*"
+				},
+				{
+					"name": "keyword.operator.modulo.des",
+					"match": "\\%"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.des",
