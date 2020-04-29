@@ -1,0 +1,25 @@
+{
+    "name": "dayz-enforce-script",
+    "displayName": "DayZ:Enforce Script",
+    "description": "Enforce Script is the language that is used by the Enfusion engine first introduced in DayZ Standalone. It is a Object-Oriented Scripting Language (OOP) that works with objects and classes and is similar to C# programming language.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "des",
+            "aliases": ["DayZ:Enforce Script", "des"],
+            "extensions": [".c"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "des",
+            "scopeName": "source.c",
+            "path": "./syntaxes/des.tmLanguage.json"
+        }]
+    }
+}
