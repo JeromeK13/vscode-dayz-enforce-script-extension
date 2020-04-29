@@ -7,6 +7,9 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
@@ -26,7 +29,21 @@
 					"match": "\\\\."
 				}
 			]
-		}
+		},
+		"comments": {
+			"name": "comment.des",
+			"patterns": [
+			  {
+				"begin": "\/\\*",
+          		"end": "\\*\/",
+				"name": "comment.block.des"
+			  },
+			  {
+				"name": "comment.line.des",
+				"match": "\/\/.*$"
+			  }
+			]
+		  }
 	},
 	"scopeName": "source.c"
 }
